@@ -53,7 +53,7 @@ btn.addEventListener('click', ()=>{
  }
  console.log(value,"S")
  setLoadingIndicator(true);
- fetch('http://localhost:8080/search', {
+ fetch('https://scrap-aolx.onrender.com/search', {
     method: 'POST',
     body: JSON.stringify({item:value }),
     headers: {
