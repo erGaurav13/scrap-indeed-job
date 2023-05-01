@@ -8,9 +8,9 @@
 const app=express()
 
 app.use(express.urlencoded({extended:true}))
-app.use(cors())
-app.use(express.json())
 
+app.use(express.json())
+app.use(cors())
 app.post('/search',async (req,res)=>{ 
   
   let {item}=req.body;
